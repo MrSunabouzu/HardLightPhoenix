@@ -1,9 +1,7 @@
 using System.Collections.Generic;
 using Content.Client.Weapons.Ranged.Components;
-using Content.Shared.Prototypes;
 using Robust.Client.GameObjects;
 using Robust.Shared.GameObjects;
-using Robust.Shared.Prototypes;
 
 namespace Content.IntegrationTests.Tests;
 
@@ -16,10 +14,11 @@ public sealed class MagazineVisualsSpriteTest
     [Test]
     public async Task MagazineVisualsSpritesExist()
     {
-        await using var pair = await PoolManager.GetServerClient();
+        await using var pair = await PoolManager.GetServerClient(new PoolSettings { Connected = true });
         var client = pair.Client;
         var protoMan = client.ResolveDependency<IPrototypeManager>();
         var componentFactory = client.ResolveDependency<IComponentFactory>();
+        var spriteSys = client.System<SpriteSystem>();
 
         await client.WaitAssertion(() =>
         {
@@ -39,9 +38,9 @@ public sealed class MagazineVisualsSpriteTest
                         @$"{proto.ID} has MagazineVisualsComponent but no AppearanceComponent.");
 
                     var toTest = new List<(int, string)>();
-                    if (sprite.LayerMapTryGet(GunVisualLayers.Mag, out var magLayerId))
+                    if (spriteSys.LayerMapTryGet((uid, sprite), GunVisualLayers.Mag, out var magLayerId, false))
                         toTest.Add((magLayerId, ""));
-                    if (sprite.LayerMapTryGet(GunVisualLayers.MagUnshaded, out var magUnshadedLayerId))
+                    if (spriteSys.LayerMapTryGet((uid, sprite), GunVisualLayers.MagUnshaded, out var magUnshadedLayerId, false))
                         toTest.Add((magUnshadedLayerId, "-unshaded"));
 
                     Assert.That(toTest, Is.Not.Empty,
@@ -50,7 +49,7 @@ public sealed class MagazineVisualsSpriteTest
                     var start = visuals.ZeroVisible ? 0 : 1;
                     foreach (var (id, midfix) in toTest)
                     {
-                        Assert.That(sprite.TryGetLayer(id, out var layer));
+                        Assert.That(spriteSys.TryGetLayer((uid, sprite), id, out var layer, false));
                         var rsi = layer.ActualRsi;
                         for (var i = start; i < visuals.MagSteps; i++)
                         {
