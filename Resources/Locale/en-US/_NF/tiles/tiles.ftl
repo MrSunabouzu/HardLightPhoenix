@@ -15,6 +15,7 @@ tiles-wood-light-mosaic-floor = light mosaic wood floor
 tiles-wood-fancy-floor = fancy wood floor
 tiles-wood-versailles-floor = versailles wood floor
 tiles-cheese-floor = cheese floor
+tiles-inflatable-plating = inflatable floor
 
 # Upstream renames
 tiles-dirt-floor-undiggable = dirt floor (undiggable)

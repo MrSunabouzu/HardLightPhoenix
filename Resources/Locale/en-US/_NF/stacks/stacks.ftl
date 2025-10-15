@@ -119,3 +119,8 @@ stack-spesso = spesso {$amount ->
 }
 
 stack-light-grass-floor = light grass floor
+stack-inflatable-floor = inflatable floor
+stack-inflatable-window = inflatable window
+stack-inflatable-door-window = inflatable windoor
+stack-inflatable-dock = inflatable external airlock
+stack-inflatable-crate = inflatable crate
