@@ -90,7 +90,7 @@
   materials:
     Steel: 1200 # shell/casing
     Plasteel: 600 # penetrator
-    Synthalloy: 200 # penetrator
+    #Synthalloy: 200 # penetrator
     Glass: 400 # opticals
     Gold: 200 # electronics
     Silver: 200 # electronics

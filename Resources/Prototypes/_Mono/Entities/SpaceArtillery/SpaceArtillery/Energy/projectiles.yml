@@ -7,6 +7,7 @@
 # SPDX-FileCopyrightText: 2025 Redrover1760
 # SPDX-FileCopyrightText: 2025 RikuTheKiller
 # SPDX-FileCopyrightText: 2025 core-mene
+# SPDX-FileCopyrightText: 2025 significant harassment
 # SPDX-FileCopyrightText: 2025 starch
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
@@ -109,7 +110,7 @@
     sprite: _Mono/Objects/SpaceArtillery/plasmashot.rsi
     layers:
     - state: plasmashot
-    scale: 1, 7
+    scale: 1, 11
   - type: Ammo
     muzzleFlash: null
   - type: ShipWeaponProjectile
@@ -119,7 +120,7 @@
     requireNoGrid: true
     shape: arrow
   - type: TimedDespawn
-    lifetime: 6.5
+    lifetime: 24
   - type: PointLight
     color: "#FF00AA"
   - type: ExplodeOnTrigger
