@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "by Darkness Haven",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+    "states": [
+        {
+            "name": "XenoLampFloor",
+            "directions": 4
+        },
+		{
+            "name": "XenoLampFloor_Glow",
+            "directions": 4
+        },
+		{
+            "name": "XenoWallLamp",
+            "directions": 4
+        },
+		{
+            "name": "XenoWallLamp_Glow",
+            "directions": 4
+        }
+    ]
+}
