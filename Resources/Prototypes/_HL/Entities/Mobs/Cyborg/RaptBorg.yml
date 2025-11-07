@@ -6,7 +6,7 @@
     prototype: Quadborg
   - type: Sprite
     sprite: _HL/Mobs/Silicon/RaptBorg.rsi
-    scale: 0.8, 0.8
+    scale: 0.5, 0.5
     layers:
     - state: Rborg_Base
       map: ["movement"]
@@ -90,7 +90,7 @@
     prototype: Quadborg
   - type: Sprite
     sprite: _HL/Mobs/Silicon/RaptBorg.rsi
-    scale: 0.8, 0.8
+    scale: 0.5, 0.5
     layers:
     - state: Rborg_WingBase
       map: ["movement"]
@@ -174,7 +174,7 @@
     prototype: Quadborg
   - type: Sprite
     sprite: _HL/Mobs/Silicon/RaptBorg.rsi
-    scale: 0.8, 0.8
+    scale: 0.5, 0.5
     layers:
     - state: Rborg_Athren
       map: ["movement"]
