@@ -1,0 +1,28 @@
+- type: entity
+  parent: Spear
+  id: HLRatvarianSpear
+  name: ratvarian spear
+  description: A heavy, razor-sharp spear made of brass. It thrums with barely-contained energy.
+  components:
+  - type: Sprite
+    sprite: _HL/Objects/Weapons/Melee/ratvarian_spear.rsi
+    state: icon
+  - type: Clothing
+    sprite: _HL/Objects/Weapons/Melee/ratvarian_spear.rsi
+    quickEquip: false
+    slots:
+    - suitStorage
+    - belt
+    - back
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    damage:
+      types:
+        Piercing: 3
+        Slash: 10
+        Asphyxiation: 2
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Piercing: 2
+        Slash: 2

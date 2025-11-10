@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingOuterBase
+  id: HLClothingOuterRobesClockwork
+  name: clockwork robes
+  description: What is a clockwork cult without clockwork robes?
+  components:
+  - type: Sprite
+    sprite: _HL/Clothing/OuterClothing/clockwork_robes.rsi
+  - type: Clothing
+    sprite: _HL/Clothing/OuterClothing/clockwork_robes.rsi

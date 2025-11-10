@@ -54,3 +54,21 @@
     fiberColor: fibers-red
   - type: FingerprintMask
   - type: Insulated
+
+- type: entity
+  parent: ClothingHandsGlovesSyntheticBase
+  id: HLClothingHandsGlovesClockwork
+  name: clockwork gauntlets
+  description: Heavy, shock-resistant gauntlets with brass reinforcement.
+  components:
+  - type: Sprite
+    sprite: _HL/Clothing/Gloves/clockwork_gauntlets.rsi
+  - type: Clothing
+    sprite: _HL/Clothing/Gloves/clockwork_gauntlets.rsi
+  - type: Insulated
+  - type: GloveHeatResistance
+    heatResistance: 1400
+  - type: Fiber
+    fiberMaterial: fibers-durathread
+    fiberColor: fibers-orange
+  - type: FingerprintMask
