@@ -12,7 +12,6 @@
   supervisors: job-supervisors-hire # Frontier
   access:
   - Maintenance
-  - Library
   - Service
   accessGroups: # Frontier
   - GeneralAccess # Frontier
