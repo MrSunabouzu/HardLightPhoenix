@@ -18,7 +18,8 @@
   startingGear: ChiefEngineerGear
   icon: "JobIconChiefEngineer"
   supervisors: job-supervisors-captain
-  # canBeAntag: false
+  canBeAntag: false
+  requireAdminNotify: true
   ## Frontier: commented everything below out
   access:
   - Maintenance
@@ -31,8 +32,8 @@
   # - Cryogenics
   # - Frontier
   special:
-  - !type:AddImplantSpecial
-    implants: [ MindShieldImplant ]
+  # - !type:AddImplantSpecial
+    # implants: [ MindShieldImplant ]
   - !type:AddComponentSpecial
     components:
     - type: CommandStaff

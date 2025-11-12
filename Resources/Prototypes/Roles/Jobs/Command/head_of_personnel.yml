@@ -23,6 +23,7 @@
     startingGear: HoPGear
     icon: "JobIconHeadOfPersonnel"
     supervisors: job-supervisors-captain
+    requireAdminNotify: true
     canBeAntag: false
     # Frontier: default access
     access:

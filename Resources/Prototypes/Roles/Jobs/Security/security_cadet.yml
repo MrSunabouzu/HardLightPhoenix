@@ -6,7 +6,7 @@
   startingGear: SecurityCadetGear
   icon: "JobIconSecurityCadet"
   supervisors: job-supervisors-security
-  # canBeAntag: false
+  canBeAntag: false
   ## Frontier: commented out stuff below
   access:
   - Security
@@ -15,10 +15,9 @@
   - Service
   - External
   - Cryogenics
-  # special:
-  # - !type:AddImplantSpecial
-  #   implants: [ MindShieldImplant ]
-  ## End Frontier: commented out stuff above
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
   setPreference: true
   accessGroups: # Frontier
   - GeneralAccess # Frontier

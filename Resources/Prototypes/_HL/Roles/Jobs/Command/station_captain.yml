@@ -1,9 +1,9 @@
-- type: job # Move this to _HL later
+- type: job
   id: StationCaptain
   name: job-name-station-captain
   description: job-description-captain
   playTimeTracker: JobStationCaptain
-  setPreference: true # Frontier
+  setPreference: true
   requirements:
     - !type:DepartmentTimeRequirement
       department: Engineering
@@ -54,12 +54,11 @@
   - Medical
   - Frontier
   accessGroups:
-  - GeneralAccess # Frontier
+  - GeneralAccess
   - AllAccess
   special:
-  # - !type:AddImplantSpecial
-  #   implants: [ MindShieldImplant ]
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
   - !type:AddComponentSpecial
     components:
       - type: CommandStaff
-  ## Frontier: commented everything above out

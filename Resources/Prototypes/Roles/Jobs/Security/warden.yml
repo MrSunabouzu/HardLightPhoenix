@@ -14,7 +14,7 @@
   startingGear: WardenGear
   icon: "JobIconWarden"
   supervisors: job-supervisors-hos
-  # canBeAntag: false
+  canBeAntag: false
   ## Frontier: commented out stuff below
   access:
   - Security
