@@ -262,7 +262,7 @@
   parent: NFClothingOuterEVASuitBase
   id: ClothingOuterEVASuitMailman
   name: mailcarrier EVA suit
-  description: An EVA suit with a built-in helmet commonly issued to hydroponics workers.
+  description: An EVA suit with a built-in helmet commonly issued to mail carriers for safe parcel delivery in hazardous environments.
   components:
   - type: Sprite
     sprite: _NF/Clothing/OuterClothing/Suits/eva_color.rsi

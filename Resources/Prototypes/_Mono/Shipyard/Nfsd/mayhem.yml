@@ -2,7 +2,7 @@
   id: Mayhem
   parent: BaseVessel
   name: TSF-SKR Mayhem
-  description: A corvette equipped with missiles and a small holding cell. This ship has a TSF IFF designation.
+  description: A corvette equipped with missiles and a small holding cell. This ship has a TSF-SKR IFF designation.
   price: 115250
   category: Large
   group: Security
