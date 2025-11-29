@@ -4,8 +4,8 @@ meta:
   engineVersion: 267.3.0
   forkId: ""
   forkVersion: ""
-  time: 11/29/2025 16:00:16
-  entityCount: 21207
+  time: 11/29/2025 17:11:55
+  entityCount: 21208
 maps:
 - 1
 grids:
@@ -7871,7 +7871,7 @@ entities:
       pos: -21.5,45.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -20156.047
+      secondsUntilStateChange: -20204.031
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -8622,7 +8622,7 @@ entities:
       pos: -23.5,-12.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -106470.5
+      secondsUntilStateChange: -106518.484
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -8634,7 +8634,7 @@ entities:
       pos: -23.5,-13.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -106660.9
+      secondsUntilStateChange: -106708.88
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -8667,7 +8667,7 @@ entities:
       pos: -23.5,-1.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -98299.555
+      secondsUntilStateChange: -98347.54
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -8752,7 +8752,7 @@ entities:
       pos: 21.5,-13.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -87690
+      secondsUntilStateChange: -87737.984
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -8798,7 +8798,7 @@ entities:
       pos: 23.5,-5.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -57660.707
+      secondsUntilStateChange: -57708.69
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -9032,7 +9032,7 @@ entities:
       pos: 20.5,17.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -57208.64
+      secondsUntilStateChange: -57256.625
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -9773,7 +9773,7 @@ entities:
       pos: -23.5,39.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -14633.784
+      secondsUntilStateChange: -14681.769
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -110993,6 +110993,13 @@ entities:
     components:
     - type: Transform
       pos: 38.59786,6.4706745
+      parent: 2
+- proto: MedicalAssembler
+  entities:
+  - uid: 21208
+    components:
+    - type: Transform
+      pos: 18.5,58.5
       parent: 2
 - proto: MedicalAssemblerMachineCircuitboard
   entities:
