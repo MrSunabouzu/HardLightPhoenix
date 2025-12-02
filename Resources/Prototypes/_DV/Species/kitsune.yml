@@ -7,28 +7,25 @@
   markingLimits: MobKitsuneMarkingLimits
   dollPrototype: MobKitsuneDummy
   skinColoration: HumanToned
-  baseScale: 1, 1
-  minHeight: .85
-  maxHeight: 1.05
 
 - type: markingPoints
   id: MobKitsuneMarkingLimits
   points:
     Hair:
-      points: 1
+      points: 3
       required: false
     FacialHair:
-      points: 1
+      points: 3
       required: false
     Snout:
-      points: 1
+      points: 3
       required: false
     Tail:
-      points: 1
+      points: 3
       required: true
       defaultMarkings: [ KitsuneTailDefault ]
     HeadTop:
-      points: 1
+      points: 3
       required: true
       defaultMarkings: [ KitsuneEarsDefault ]
     UndergarmentTop:
@@ -38,11 +35,11 @@
       points: 1
       required: false
     Chest:
-      points: 1
+      points: 6
       required: false
     Legs:
-      points: 2
+      points: 6
       required: false
     Arms:
-      points: 2
+      points: 6
       required: false
