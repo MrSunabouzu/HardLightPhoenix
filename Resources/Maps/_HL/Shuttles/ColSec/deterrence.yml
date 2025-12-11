@@ -1106,7 +1106,7 @@ entities:
     - type: GasTileOverlay
     - type: RadiationGridResistance
     - type: BecomesStation
-      id: Deterence
+      id: Deterrence
     - type: IFF
       color: '#FFFFFFFF'
 - proto: AirAlarm
