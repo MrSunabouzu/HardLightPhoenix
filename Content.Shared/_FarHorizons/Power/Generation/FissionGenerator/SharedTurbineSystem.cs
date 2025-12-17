@@ -7,6 +7,7 @@
 
 using Content.Shared.Administration.Logs;
 using Content.Shared.Database;
+using Content.Shared.Electrocution;
 using Content.Shared.Examine;
 using Content.Shared.Interaction;
 using Content.Shared.Popups;
@@ -28,6 +29,7 @@ public abstract class SharedTurbineSystem : EntitySystem
     [Dependency] protected readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly SharedPopupSystem _popupSystem = default!;
     [Dependency] private readonly SharedToolSystem _toolSystem = default!;
+    [Dependency] private readonly EntityManager _entityManager = default!;
 
     private readonly float _threshold = 0.5f;
     private float _accumulator = 0f;
@@ -153,7 +155,16 @@ public abstract class SharedTurbineSystem : EntitySystem
         audioStream = stream?.Entity is { } entity ? entity : null;
     }
 
-    protected static void AdjustStatorLoad(TurbineComponent turbine, float change) => turbine.StatorLoad = Math.Clamp(turbine.StatorLoad + change, 1000f, 500000f);
+    protected static bool AdjustStatorLoad(TurbineComponent turbine, float change)
+    { 
+        var newSet = Math.Clamp(turbine.StatorLoad + change, 1000f, turbine.StatorLoadMax);
+        if (turbine.StatorLoad != newSet)
+        {
+            turbine.StatorLoad = newSet;
+            return true;
+        }
+        return false; 
+    }
 
     #region User Interface
     private void OnTurbineFlowRateChanged(EntityUid uid, TurbineComponent turbine, TurbineChangeFlowRateMessage args)
@@ -167,7 +178,7 @@ public abstract class SharedTurbineSystem : EntitySystem
 
     private void OnTurbineStatorLoadChanged(EntityUid uid, TurbineComponent turbine, TurbineChangeStatorLoadMessage args)
     {
-        turbine.StatorLoad = Math.Clamp(args.StatorLoad, 1000f, 500000f);
+        turbine.StatorLoad = Math.Clamp(args.StatorLoad, 1000f, turbine.StatorLoadMax);
         Dirty(uid, turbine);
         UpdateUI(uid, turbine);
         _adminLogger.Add(LogType.AtmosDeviceSetting, LogImpact.Medium,
@@ -245,6 +256,8 @@ public abstract class SharedTurbineSystem : EntitySystem
             comp.IsSmoking = false;
             _popupSystem.PopupEntity(Loc.GetString("turbine-smoke-stop", ("owner", uid)), uid, PopupType.Medium);
         }
+
+        _entityManager.EnsureComponent<ElectrifiedComponent>(uid).Enabled = comp.IsSparking;
 
         UpdateAppearance(uid, comp);
     }

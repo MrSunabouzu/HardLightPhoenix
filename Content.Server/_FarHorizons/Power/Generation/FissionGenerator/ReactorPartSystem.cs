@@ -5,7 +5,6 @@
 // SPDX-License-Identifier: CC-BY-NC-SA-3.0
 
 using Content.Server.Atmos.EntitySystems;
-using Content.Server.Atmos.Piping.Components;
 using Content.Shared._FarHorizons.Power.Generation.FissionGenerator;
 using Content.Shared.Atmos;
 using Robust.Shared.Random;
@@ -23,13 +22,13 @@ public sealed class ReactorPartSystem : SharedReactorPartSystem
     [Dependency] private readonly IRobustRandom _random = default!;
 
     /// <summary>
-    /// 
+    ///
     /// </summary>
     /// <param name="reactorPart">The reactor part.</param>
     /// <param name="reactorEnt">The entity representing the reactor this part is inserted into.</param>
     /// <param name="inGas">The gas to be processed.</param>
     /// <returns></returns>
-    public GasMixture? ProcessGas(ReactorPartComponent reactorPart, Entity<NuclearReactorComponent> reactorEnt, AtmosDeviceUpdateEvent args, GasMixture inGas)
+    public GasMixture? ProcessGas(ReactorPartComponent reactorPart, Entity<NuclearReactorComponent> reactorEnt, GasMixture inGas)
     {
         if (reactorPart.RodType != ReactorPartComponent.RodTypes.GasChannel)
             return null;
@@ -76,7 +75,7 @@ public sealed class ReactorPartSystem : SharedReactorPartSystem
 
         if (inGas != null && _atmosphereSystem.GetThermalEnergy(inGas) > 0)
         {
-            reactorPart.AirContents = inGas.RemoveVolume(Math.Min(reactorPart.GasVolume * _atmosphereSystem.PumpSpeedup() * args.dt, inGas.Volume));
+            reactorPart.AirContents = inGas.RemoveVolume(reactorPart.GasVolume);
             reactorPart.AirContents.Volume = reactorPart.GasVolume;
 
             if (reactorPart.AirContents != null && reactorPart.AirContents.TotalMoles < 1)
@@ -106,10 +105,10 @@ public sealed class ReactorPartSystem : SharedReactorPartSystem
             if (neutron.velocity > 0)
             {
                 var neutronCount = GasNeutronInteract(reactorPart);
-                if (neutronCount > 1)
+                if (neutronCount > 0)
                     for (var i = 0; i < neutronCount; i++)
                         neutrons.Add(new() { dir = _random.NextAngle().GetDir(), velocity = _random.Next(1, 3 + 1) });
-                else
+                else if (neutronCount < 0)
                     neutrons.Remove(neutron);
             }
         }
@@ -117,6 +116,11 @@ public sealed class ReactorPartSystem : SharedReactorPartSystem
         return neutrons;
     }
 
+    /// <summary>
+    /// Determines the number of additional neutrons the gas makes.
+    /// </summary>
+    /// <param name="reactorPart"></param>
+    /// <returns>Change in number of neutrons</returns>
     private int GasNeutronInteract(ReactorPartComponent reactorPart)
     {
         if (reactorPart.AirContents == null)
