@@ -306,7 +306,7 @@
   name: Civilian Curio-183 auto-coil "Flayer"
   description: A single-barrel autocannon made by Aetherion Dynamics. Medium artillery piece with high fire rate but relatively low impact, firing HEAT shells to damage ship armor and systems. Can be remotely activated or linked up to a GCS. please consult a doctor if an erection lasts longer than 4 hours.
   parent: [ BaseC2ContrabandUnredeemable, WeaponLaserTurretFlayer ]
-    components:
+  components:
   - type: Sprite
     sprite: _HL/Objects/ShuttleWeapons/cvflayer.rsi
     layers:
