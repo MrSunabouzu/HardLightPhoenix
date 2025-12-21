@@ -519,21 +519,21 @@
     prototype: CVWeaponLaserTurretApollo
 
 ### Civ Capital
-- type: entity
-  id: CivReaperWeaponBoard
-  parent: BaseCivCapitalShipWeaponBoard
-  name: Civilian Curio-1089 tachyon lance "Reaper" turret board
-  components:
-  - type: MachineBoard
-    prototype: CVWeaponLaserTurretReaper
+#- type: entity
+#  id: CivReaperWeaponBoard
+#  parent: BaseCivCapitalShipWeaponBoard
+#  name: Civilian Curio-1089 tachyon lance "Reaper" turret board
+#  components:
+#  - type: MachineBoard
+#    prototype: CVWeaponLaserTurretReaper  # MISSING PROTOTYPE
 
-- type: entity
-  id: CivHarbringerWeaponBoard
-  parent: BaseCivCapitalShipWeaponBoard
-  name: Civilian Curio-129 ion cannon "Harbringer" turret board
-  components:
-  - type: MachineBoard
-    prototype: CVWeaponLaserTurretHarbringer
+#- type: entity
+#  id: CivHarbringerWeaponBoard
+#  parent: BaseCivCapitalShipWeaponBoard
+#  name: Civilian Curio-129 ion cannon "Harbringer" turret board
+#  components:
+#  - type: MachineBoard
+#    prototype: CVWeaponLaserTurretHarbringer  # MISSING PROTOTYPE
 
 ### Other
 - type: entity

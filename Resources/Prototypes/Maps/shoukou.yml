@@ -16,18 +16,17 @@
       - type: StationEmergencyShuttle
         emergencyShuttlePath: /Maps/Shuttles/DeltaV/NTES_Delta.yml
       - type: StationJobs
-        overflowJobs:
-        - Passenger
-        #- Anomaly # Floofstation
         availableJobs:
-          Anomaly: [ 4, 4 ] # FloofStation
+          # MISSING JOB PROTOTYPE
+          #Anomaly: [ 4, 4 ] # FloofStation
           #Service
           Passenger: [ -1, -1 ]
           ServiceWorker: [ 1, 2]
           Reporter: [ 0, 1 ]
           Bartender: [ 1, 2 ]
           Botanist: [ 1, 2 ]
-          MartialArtist: [ 2, 3 ]
+          # MISSING JOB PROTOTYPE
+          #MartialArtist: [ 2, 3 ]
           Chef: [ 1, 2 ]
           Clown: [ 1, 1 ]
           Janitor: [ 1, 2 ]
@@ -44,7 +43,8 @@
           StationEngineer: [ 2, 5 ]
           TechnicalAssistant: [ 2, 3 ]
           AtmosphericTechnician: [ 1, 2 ]
-          SeniorEngineer: [ 1, 1 ]
+          # MISSING JOB PROTOTYPE
+          #SeniorEngineer: [ 1, 1 ]
           #Medical
           ChiefMedicalOfficer: [ 1, 1 ]
           Paramedic: [ 1, 2 ]
@@ -52,7 +52,8 @@
           Chemist: [ 1, 2 ]
           MedicalIntern: [ 2, 3 ]
           Psychologist: [ 1, 1 ]
-          SeniorPhysician: [ 1, 1 ]
+          # MISSING JOB PROTOTYPE
+          #SeniorPhysician: [ 1, 1 ]
           #Security
           HeadOfSecurity: [ 1, 1 ]
           SecurityOfficer: [ 2, 4 ]
@@ -69,15 +70,20 @@
           Chaplain: [ 1, 1 ]
           ForensicMantis: [ 1, 1 ]
           Borg: [ 2, 2 ]
-          SeniorResearcher: [ 1, 1 ]
+          # MISSING JOB PROTOTYPE
+          #SeniorResearcher: [ 1, 1 ]
           #Logistics
           Quartermaster: [ 1, 1 ]
-          InventorySpecialist: [ 1, 1 ] #FloofStation
+          # MISSING JOB PROTOTYPE
+          #InventorySpecialist: [ 1, 1 ] #FloofStation
           SalvageSpecialist: [ 2, 4 ]
           MailCarrier: [ 1, 2 ]
           CargoTechnician: [ 2, 3 ]
           # Justice added by FloofStation
-          ChiefJustice: [ 1, 1 ] #FloofStation
-          Clerk: [ 1, 1 ] #FloofStation
+          # MISSING JOB PROTOTYPE
+          #ChiefJustice: [ 1, 1 ] #FloofStation
+          # MISSING JOB PROTOTYPE
+          #Clerk: [ 1, 1 ] #FloofStation
           Lawyer: [ 2, 2 ] #FloofStation
-          Prosecutor: [ 1, 1 ] #FloofStation
+          # MISSING JOB PROTOTYPE
+          #Prosecutor: [ 1, 1 ] #FloofStation

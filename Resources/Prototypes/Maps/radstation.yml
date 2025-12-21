@@ -15,11 +15,9 @@
             !type:NanotrasenNameGenerator
             prefixCreator: '14'
         - type: StationJobs
-          overflowJobs:
-            - Passenger
-            #- Anomaly # Floofstation
           availableJobs:
-            Anomaly: [ 4, 4 ] # Floofstation
+            # MISSING JOB PROTOTYPE
+            #Anomaly: [ 4, 4 ] # Floofstation
             #service
             Captain: [ 1, 1 ]
             #BlueshieldOfficer: [ 1, 1] Floof - uncomment once implemented on Floof maps
@@ -37,24 +35,29 @@
             AtmosphericTechnician: [ 4, 4 ]
             StationEngineer: [ 3, 3 ]
             TechnicalAssistant: [ 2, 2 ]
-            SeniorEngineer: [ 1, 1 ]
+            # MISSING JOB PROTOTYPE
+            #SeniorEngineer: [ 1, 1 ]
             #medical
             ChiefMedicalOfficer: [ 1, 1 ]
             Chemist: [ 2, 2 ]
-            MedicalBorg: [ 2, 2 ]
+            # MISSING JOB PROTOTYPE
+            #MedicalBorg: [ 2, 2 ]
             MedicalDoctor: [ 3, 3 ]
             Paramedic: [ 1, 1 ]
             MedicalIntern: [ 2, 2 ]
-            SeniorPhysician: [ 1, 1 ]
+            # MISSING JOB PROTOTYPE
+            #SeniorPhysician: [ 1, 1 ]
             #science
             ResearchDirector: [ 1, 1 ]
-            Roboticist: [ 1, 2 ]
+            # MISSING JOB PROTOTYPE
+            #Roboticist: [ 1, 2 ]
             Scientist: [ 5, 5 ]
             ForensicMantis: [ 1, 1 ]
             ResearchAssistant: [ 2, 2 ]
             Borg: [ 1, 1 ]
             Chaplain: [ 1, 1 ]
-            SeniorResearcher: [ 1, 1 ]
+            # MISSING JOB PROTOTYPE
+            #SeniorResearcher: [ 1, 1 ]
             #security
             HeadOfSecurity: [ 1, 1 ]
             Brigmedic: [ 1, 1 ]
@@ -67,7 +70,8 @@
             SeniorOfficer: [ 1, 1 ]
             #supply
             Quartermaster: [ 1, 1 ]
-            InventorySpecialist: [ 1, 1 ] #FloofStation
+            # MISSING JOB PROTOTYPE
+            #InventorySpecialist: [ 1, 1 ] #FloofStation
             MailCarrier: [ 1, 2 ]
             SalvageSpecialist: [ 3, 3 ]
             CargoTechnician: [ 5, 5 ]
@@ -79,7 +83,10 @@
             Reporter: [ 2, 2 ]
             Psychologist: [ 1, 1 ]
             #justice
-            ChiefJustice: [ 1, 1 ]
-            Clerk: [ 1, 1 ]
+            # MISSING JOB PROTOTYPE
+            #ChiefJustice: [ 1, 1 ]
+            # MISSING JOB PROTOTYPE
+            #Clerk: [ 1, 1 ]
             Lawyer: [ 1, 1 ]
-            Prosecutor: [ 1, 1]
+            # MISSING JOB PROTOTYPE
+            #Prosecutor: [ 1, 1]
