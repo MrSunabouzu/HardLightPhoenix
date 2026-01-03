@@ -127,3 +127,15 @@ Entries:
   changes: []
   id: 14
   time: '2026-01-03T01:26:41.0000000+00:00'
+- author: TrylobyteWasTaken
+  changes:
+    - type: Add
+      message: added the TraversalDistorter component to artifact analyzer
+    - type: Add
+      message: added the Window tag to shuttle windows
+    - type: Tweak
+      message: Syndicate FTL Interceptions and Syndicate Weapons Cache spawn
+    - type: Fix
+      message: Paramedic hoverbikes move again
+  id: 15
+  time: '2026-01-03T01:30:45.0000000+00:00'
