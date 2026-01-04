@@ -351,6 +351,12 @@ uplink-mercenary-combat-crisis-kit-desc = 4 Ready-made Crisis injectors, for whe
 uplink-mercenary-combat-bruiz-kit-name = Bruiz Kit
 uplink-mercenary-combat-bruiz-kit-desc = 4 Ready-made Bruiz injectors, use when beaten black and blue.
 
+uplink-security-combat-pen-name = Combat Medipen
+uplink-security-combat-pen-desc = A general use shot of omnizine, packaged in a autoinjector.
+
+uplink-security-syringe-case-name = Medipen Case
+uplink-security-syringe-case-desc = A pocket case filled with medipens for most combat scenarios.
+
 uplink-mercenary-combat-burn-kit-name = Burn Kit
 uplink-mercenary-combat-burn-kit-desc = 4 Ready-made Burn injectors, man burns suck bad.
 
