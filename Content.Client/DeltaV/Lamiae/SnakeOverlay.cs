@@ -105,7 +105,35 @@ public sealed class SnakeOverlay : Overlay
         Vector2? lastPtCW = null;
         Vector2? lastPtCCW = null;
 
-        var tex = _resourceCache.GetTexture(lamia.TexturePath);
+        // Load texture from either direct path or RSI state
+        Texture tex;
+        if (!string.IsNullOrWhiteSpace(lamia.TextureState))
+        {
+            // Load from RSI
+            var rsiPath = Robust.Shared.Utility.SpriteSpecifierSerializer.TextureRoot / lamia.TexturePath;
+            if (_resourceCache.TryGetResource<RSIResource>(rsiPath, out var rsi))
+            {
+                if (rsi.RSI.TryGetState(lamia.TextureState, out var state))
+                {
+                    tex = state.Default;
+                }
+                else
+                {
+                    Robust.Shared.Log.Logger.Error($"SegmentedEntity: RSI state '{lamia.TextureState}' not found in {lamia.TexturePath}");
+                    return; // Can't draw without a valid texture
+                }
+            }
+            else
+            {
+                Robust.Shared.Log.Logger.Error($"SegmentedEntity: Failed to load RSI from {lamia.TexturePath}");
+                return;
+            }
+        }
+        else
+        {
+            // Load direct texture (legacy behavior)
+            tex = _resourceCache.GetTexture(lamia.TexturePath);
+        }
 
         // Apply optional shader if specified and available.
         ShaderInstance? shaderInstance = null;
