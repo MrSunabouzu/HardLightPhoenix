@@ -19,7 +19,7 @@
       amount: 1
     FourteenLoko:
       amount: 1
-    Pomelustine:
+    PomegranteJuice:
       amount: 1
     Sugar:
       amount: 1
@@ -37,7 +37,7 @@
       amount: 1
     JuiceBanana:
       amount: 1
-    Pomelustine:
+    PomegranteJuice:
       amount: 1
   products:
     ABLustine: 3
@@ -65,40 +65,6 @@
       amount: 1
   products:
     BandE: 3
-
-- type: reaction
-  id: NikkosCumLust
-  reactants:
-    Cum:
-      amount: 4
-    Pomelustine:
-      amount: 3
-    NikkosNaughtyNectar:
-      amount: 3
-  products:
-    NikkosCumLust: 10
-
-- type: reaction
-  id: NikkosSluttyCumLust
-  reactants:
-    NikkosCumLust:
-      amount: 10
-    Philterex:
-      amount: 5
-  products:
-    NikkosSluttyCumLust: 15
-
-- type: reaction
-  id: BlueBaller
-  reactants:
-    BlueCuracao:
-      amount: 1
-    JuiceWatermelon:
-      amount: 1
-    Pomelustine:
-      amount: 1
-  products:
-    BlueBaller: 3
 
 - type: reaction
   id: CafeDeCacao
@@ -171,20 +137,6 @@
       amount: 1
   products:
     DeadMansDraught: 4
-
-- type: reaction
-  id: DemonSeed
-  reactants:
-    Blood:
-      amount: 2
-    Cum:
-      amount: 1
-    Pomelustine:
-      amount: 2
-    Vodka:
-      amount: 1
-  products:
-    DemonSeed: 6
 
 - type: reaction
   id: DirtyWastelander
@@ -303,7 +255,7 @@
   reactants:
     EnergyDrink:
       amount: 1
-    Pomelustine:
+    PomegranteJuice:
       amount: 1
     SpaceMountainWind:
       amount: 1
@@ -363,7 +315,7 @@
   reactants:
     EnergyDrink:
       amount: 1
-    Pomelustine:
+    PomegranteJuice:
       amount: 1
     Sugar:
       amount: 1
@@ -387,7 +339,7 @@
 - type: reaction
   id: LoversKiss
   reactants:
-    Pomelustine:
+    PomegranteJuice:
       amount: 1
     Wine:
       amount: 2
@@ -501,7 +453,7 @@
       amount: 1
     JuiceLime:
       amount: 1
-    Pomelustine:
+    PomegranteJuice:
       amount: 1
   products:
     PomTwist: 3
@@ -555,7 +507,7 @@
   reactants:
     Coffee:
       amount: 1
-    Pomelustine:
+    PomegranteJuice:
       amount: 1
     SodaWater:
       amount: 1
