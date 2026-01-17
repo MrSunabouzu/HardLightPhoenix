@@ -1281,7 +1281,7 @@
   idealLight: 6
   waterConsumption: 0.60
   chemicals:
-    Pomelustine:
+    PomegranteJuice:
       Min: 5
       Max: 30
       PotencyDivisor: 10

@@ -30,20 +30,6 @@
           Quantity: 30
 
 - type: entity
-  id: ChemistryBottlePomelustine
-  suffix: Pomelustine
-  parent: BaseChemistryBottleFilled
-  name: pomelustine bottle
-  components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: Pomelustine
-          Quantity: 30
-
-- type: entity
   id: ChemistryBottlePhilterex
   suffix: Philterex
   parent: BaseChemistryBottleFilled

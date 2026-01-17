@@ -1977,13 +1977,14 @@ entities:
     - type: Transform
       pos: 0.5,-16.5
       parent: 1
-- proto: CrateLewdToys
-  entities:
-  - uid: 513
-    components:
-    - type: Transform
-      pos: 3.5,-3.5
-      parent: 1
+# Phoenix Edit
+# - proto: CrateLewdToys
+#   entities:
+#   - uid: 513
+#     components:
+#     - type: Transform
+#       pos: 3.5,-3.5
+#       parent: 1
 - proto: CurtainsBlack
   entities:
   - uid: 320

@@ -105,38 +105,6 @@
 
 - type: entity
   parent: DrinkGlass
-  id: DrinkNikkosCumLustGlass
-  suffix: nikko's cum lust
-  components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: NikkosCumLust
-          Quantity: 30
-  - type: Icon
-    sprite: _Floof/Objects/Consumable/Drinks/nikkoscumlust.rsi
-    state: icon
-
-- type: entity
-  parent: DrinkGlass
-  id: DrinkNikkosSluttyCumLustGlass
-  suffix: nikko's slutty cum lust
-  components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: NikkosSluttyCumLust
-          Quantity: 30
-  - type: Icon
-    sprite: _Floof/Objects/Consumable/Drinks/nikkossluttycumlust.rsi
-    state: icon
-
-- type: entity
-  parent: DrinkGlass
   id: DrinkCalicoSunriseGlass
   suffix: calico sunrise
   components:

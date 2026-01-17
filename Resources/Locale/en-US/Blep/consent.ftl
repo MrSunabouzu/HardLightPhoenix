@@ -20,7 +20,7 @@ consent-GenitalMarkings-name = See Genital Markings
 consent-GenitalMarkings-desc = Turn this on to allow showing/hiding genital markings in-game.
 
 consent-Aphrodisiacs-name = Be affected by aphrodisiacs
-consent-Aphrodisiacs-desc = Turn this on to be affected by pomelustine, philterex, and libidozenithine.
+consent-Aphrodisiacs-desc = Turn this on to be affected by philterex and libidozenithine.
 
 consent-Cum-name = Interact with cum
 consent-Cum-desc = Turn this on for cum to have any meaningful interaction with you.

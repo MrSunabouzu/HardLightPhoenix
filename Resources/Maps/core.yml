@@ -67240,13 +67240,14 @@ entities:
     - type: Transform
       pos: 15.5,28.5
       parent: 2
-- proto: CrateLewdToys
-  entities:
-  - uid: 11150
-    components:
-    - type: Transform
-      pos: -32.5,32.5
-      parent: 2
+# Phoenix Edit
+# - proto: CrateLewdToys
+#   entities:
+#   - uid: 11150
+#     components:
+#     - type: Transform
+#       pos: -32.5,32.5
+#       parent: 2
 - proto: CrateMachine
   entities:
   - uid: 1014

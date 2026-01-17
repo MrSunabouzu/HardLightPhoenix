@@ -79,9 +79,6 @@
   - type: Speech
     speechVerb: Robotic
   - type: LayingDown
-  - type: CumProducer
-    maxVol: 250
-    reVol: 50
   - type: AccessReader
     access: [["Security"], ["Command"], ["Research"], ["Mercenary"]]
   - type: SiliconLawProvider
@@ -698,7 +695,7 @@
   id: Xenoquad
   name: Quad Xenoborg
   suffix: with brain
-  description: A man-machine hybrid that aims to replicate itself. They love extracting brains to insert into fresh Xenoborg chassis to grow their army. This one seems to have 4 legs and additional assets. 
+  description: A man-machine hybrid that aims to replicate itself. They love extracting brains to insert into fresh Xenoborg chassis to grow their army. This one seems to have 4 legs and additional assets.
   components:
   - type: Construction
     node: start

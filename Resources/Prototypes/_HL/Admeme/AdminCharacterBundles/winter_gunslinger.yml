@@ -23,11 +23,11 @@
 
 # pocket1
 # - type: entity
-  # id: 
-  # parent: 
-  # name: 
-  # description: 
-  # suffix: 
+  # id:
+  # parent:
+  # name:
+  # description:
+  # suffix:
   # components:
 
 # pocket2
@@ -60,20 +60,20 @@
 
 # neck
 # - type: entity
-  # id: 
-  # parent: 
-  # name: 
-  # description: 
-  # suffix: 
+  # id:
+  # parent:
+  # name:
+  # description:
+  # suffix:
   # components:
 
 # mask
 # - type: entity
-  # id: 
-  # parent: 
-  # name: 
-  # description: 
-  # suffix: 
+  # id:
+  # parent:
+  # name:
+  # description:
+  # suffix:
   # components:
 
 # eyes
@@ -91,38 +91,38 @@
 
 # ears
 # - type: entity
-  # id: 
-  # parent: 
-  # name: 
-  # description: 
-  # suffix: 
+  # id:
+  # parent:
+  # name:
+  # description:
+  # suffix:
   # components:
 
 # gloves
 # - type: entity
-  # id: 
-  # parent: 
-  # name: 
-  # description: 
-  # suffix: 
+  # id:
+  # parent:
+  # name:
+  # description:
+  # suffix:
   # components:
 
 # shoes
 # - type: entity
-  # id: 
-  # parent: 
-  # name: 
-  # description: 
-  # suffix: 
+  # id:
+  # parent:
+  # name:
+  # description:
+  # suffix:
   # components:
 
 # suitstorage
 # - type: entity
-  # id: 
-  # parent: 
-  # name: 
-  # description: 
-  # suffix: 
+  # id:
+  # parent:
+  # name:
+  # description:
+  # suffix:
   # components:
 
 # outerClothing
@@ -148,32 +148,32 @@
 
 # jumpsuit
 # - type: entity
-  # id: 
-  # parent: 
-  # name: 
-  # description: 
-  # suffix: 
+  # id:
+  # parent:
+  # name:
+  # description:
+  # suffix:
   # components:
 
 # wallet
 # - type: entity
-  # id: 
-  # parent: 
-  # name: 
-  # description: 
-  # suffix: 
+  # id:
+  # parent:
+  # name:
+  # description:
+  # suffix:
   # components:
   # - type: StorageFill
     # contents:
-      # - id: 
+      # - id:
         # amount: 1
 
 # belt
 - type: entity
   id: ClothingBeltUtilityWinterFilled
   parent: ClothingBeltUtility
-  # name: 
-  # description: 
+  # name:
+  # description:
   suffix: Winter, Filled
   components:
   - type: StorageFill
@@ -185,8 +185,8 @@
 - type: entity
   id: ClothingBackpackSatchelLeatherWinterFilled
   parent: ClothingBackpackSatchelLeather
-  # name: 
-  # description: 
+  # name:
+  # description:
   suffix: Winter, Filled
   components:
   # - type: ExplosionResistance
@@ -206,8 +206,8 @@
 - type: entity
   id: MercenaryPDAWinter
   parent: MercenaryPDA
-  # name: 
-  # description: 
+  # name:
+  # description:
   suffix: Winter, Admin
   components:
   - type: CartridgeLoader
@@ -225,11 +225,11 @@
 
 # ID Card
 # - type: entity
-  # id: 
+  # id:
   # parent: IDCardStandard
-  # name: 
-  # description: 
-  # suffix: 
+  # name:
+  # description:
+  # suffix:
   # components:
   # - type: Access
     # tags:
@@ -245,7 +245,7 @@
   id: FluteInstrumentWinter
   parent: FluteInstrument
   name: winter's flute
-  # description: 
+  # description:
   suffix: Winter, Admin
   components:
   - type: Item
@@ -253,40 +253,39 @@
   - type: ActivatableUI
     inHandsOnly: false
     requireActiveHand: false
+# phoenix Edit
+# - type: entity
+#   id: LewdFleshlightRedWinter
+#   parent: LewdFleshlightRed
+#   name: Winter
+#   suffix: Winter, Admin
+#   categories: [ HideSpawnMenu ]
+#   components:
+#   - type: SolutionContainerManager
+#     solutions:
+#       fleshlight:
+#         maxVol: 300
+#         reagents:
+#           - ReagentId: Cum
+#             Quantity: 300
 
-
-- type: entity
-  id: LewdFleshlightRedWinter
-  parent: LewdFleshlightRed
-  name: Winter
-  suffix: Winter, Admin
-  categories: [ HideSpawnMenu ]
-  components: 
-  - type: SolutionContainerManager
-    solutions:
-      fleshlight:
-        maxVol: 300
-        reagents:
-          - ReagentId: Cum
-            Quantity: 300
-
-
-# hand duffel
-- type: entity
-  id: NFClothingBackpackDuffelColorBrownWinterFilled
-  parent: NFClothingBackpackDuffelColorBrown
-  # name: 
-  # description: 
-  suffix: Winter, Filled
-  components:
-  - type: StorageFill
-    contents:
-      - id: AmmoBox45_magnumFMJ
-        amount: 8
-      - id: DrinkPomonadeGlass
-      - id: BoxDispenserFlare
-      - id: MedicatedSuture
-      - id: RegenerativeMesh
-      - id: DiphenhydramineVialBluespace
-      - id: Syringe
-      - id: LewdFleshlightRedWinter
+#Phoenix edit
+# # hand duffel
+# - type: entity
+#   id: NFClothingBackpackDuffelColorBrownWinterFilled
+#   parent: NFClothingBackpackDuffelColorBrown
+#   # name:
+#   # description:
+#   suffix: Winter, Filled
+#   components:
+#   - type: StorageFill
+#     contents:
+#       - id: AmmoBox45_magnumFMJ
+#         amount: 8
+#       - id: DrinkPomonadeGlass
+#       - id: BoxDispenserFlare
+#       - id: MedicatedSuture
+#       - id: RegenerativeMesh
+#       - id: DiphenhydramineVialBluespace
+#       - id: Syringe
+#       - id: LewdFleshlightRedWinter

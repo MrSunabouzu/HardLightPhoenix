@@ -1650,10 +1650,6 @@
       prob: 0.002
     - id: ReagentSlimeBuzzachloricbees
       prob: 0.002
-    - id: ReagentSlimeCum
-      prob: 0.005
-    - id: ReagentSlimePomelustine
-      prob: 0.005
     - id: ReagentSlimePhilterex
       prob: 0.005
     - id: ReagentSlimeLibidozenithizine
@@ -1841,7 +1837,7 @@
       prob: 0.003
     - id: HostileTrainRainLizard
       prob: 0.001
-      
+
 - type: entity
   id: WawaVents
   parent: [VentCrittersBase, BaseGameRule]
