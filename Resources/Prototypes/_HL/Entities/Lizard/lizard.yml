@@ -2,6 +2,7 @@
   id: HL_LizardHead
   parent: BaseMobCarp
   name: lizard head
+  description: eats Wawas
   abstract: true
   components:
   - type: Sprite
@@ -108,7 +109,8 @@
     staticScale: 0.6
     useTaperSystem: true
     taperOffset: 3
-    texturePath: /Textures/_HL/Lizard/lizard.rsi/bluesegment.png
+    texturePath: _HL/Lizard/lizard.rsi
+    textureState: bluesegment
     shaderId: unshaded
 
 - type: entity
@@ -178,7 +180,8 @@
     segmentId: greenRainLizardSegment
     useTaperSystem: true
     taperOffset: 3
-    texturePath: /Textures/_HL/Lizard/lizard.rsi/greensegment.png
+    texturePath: _HL/Lizard/lizard.rsi
+    textureState: greensegment
     shaderId: unshaded
 
 - type: entity
@@ -248,7 +251,8 @@
     segmentId: greenRainLizardSegment
     useTaperSystem: true
     taperOffset: 3
-    texturePath: /Textures/_HL/Lizard/lizard.rsi/pinksegment.png
+    texturePath: _HL/Lizard/lizard.rsi
+    textureState: pinksegment
     shaderId: unshaded
 
 - type: entity
@@ -318,7 +322,8 @@
     segmentId: greenRainLizardSegment
     useTaperSystem: true
     taperOffset: 3
-    texturePath: /Textures/_HL/Lizard/lizard.rsi/segment.png
+    texturePath: _HL/Lizard/lizard.rsi
+    textureState: segment
     shaderId: unshaded
   - type: Stealth
     enabledOnDeath: false
@@ -394,7 +399,8 @@
     segmentId: greenRainLizardSegment
     useTaperSystem: true
     taperOffset: 3
-    texturePath: /Textures/_HL/Lizard/lizard.rsi/backcyansegment.png
+    texturePath: _HL/Lizard/lizard.rsi
+    textureState: backcyansegment
     shaderId: unshaded
 
 - type: entity
@@ -464,7 +470,8 @@
     segmentId: RedRainLizardSegment
     useTaperSystem: true
     taperOffset: 3
-    texturePath: /Textures/_HL/Lizard/lizard.rsi/redsegment.png
+    texturePath: _HL/Lizard/lizard.rsi
+    textureState: redsegment
     shaderId: unshaded
 
 - type: entity
@@ -534,7 +541,8 @@
     segmentId: RedRainLizardSegment
     useTaperSystem: true
     taperOffset: 3
-    texturePath: /Textures/_HL/Lizard/lizard.rsi/trainsegment.png
+    texturePath: _HL/Lizard/lizard.rsi
+    textureState: trainsegment
     shaderId: unshaded
 
 - type: entity

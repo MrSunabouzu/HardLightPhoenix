@@ -243,11 +243,12 @@
   equipment:
     belt: ClothingBeltSheathFilledHilt
 
-- type: loadout
-  id: ContractorClothingBeltSecurityWebbingChameleon
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: ContractorT2
-  price: 4000
-  equipment:
-    belt: ClothingBeltSecurityWebbingChameleon
+#- type: loadout
+#  id: ContractorClothingBeltSecurityWebbingChameleon
+#  effects:
+#  - !type:GroupLoadoutEffect
+#    proto: ContractorT2
+#  price: 4000
+#  equipment:
+#    belt: ClothingBeltSecurityWebbingChameleon
+#
