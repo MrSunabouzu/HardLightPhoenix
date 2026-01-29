@@ -1,0 +1,46 @@
+- type: entity
+  id: OrganHerbivoreStomach
+  parent: OrganAnimalStomach
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Stomach
+    specialDigestible:
+      tags:
+      - Vegetable
+      - Pill
+      - Crayon
+      - Paper
+      - Fruit
+      - Bread
+  - type: SolutionContainerManager
+    solutions:
+      stomach:
+        maxVol: 50
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 5
+
+- type: entity
+  id: OrganCarnivoreStomach
+  parent: OrganAnimalStomach
+  categories: [ HideSpawnMenu]
+  Components:
+  - type: Stomach
+    specialDigestible:
+      tags:
+      - Meat
+      - Blood
+      - Pill
+      - Crayon
+      - Paper
+  - type: SolutionContainerManager
+    solutions:
+      stomach:
+        maxVol: 50
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 5

@@ -1,0 +1,47 @@
+type : Diet
+id: ReptilianStomach
+name: "Reptilian Stomach"
+popupText: "You feel like you could eat meat, blood, and fruit."
+components:
+- type: DietSwap
+  newStomachPrototype: OrganReptilianStomach
+
+type : Diet
+id: MothStomach
+name: "Moffic Stomach"
+popupText: "You feel like you could eat fabric."
+components:
+- type: DietSwap
+  newStomachPrototype: OrganMothStomach
+
+type : Diet
+id: HumanStomach
+name: "Human Stomach"
+popupText: "You feel like you could eat just about anything."
+components:
+- type: DietSwap
+  newStomachPrototype: OrganHumanStomach
+
+type : Diet
+id: VulpkaninStomach
+name: "Canine Stomach"
+popupText: "You feel like you could anything but chocolate and onions."
+components:
+- type: DietSwap
+  newStomachPrototype: OrganVulpkaninStomach
+
+type : Diet
+id: HerbivoreStomach
+name: "Herbivore Stomach"
+popupText: "You feel like you could eat veggies and fruit."
+components:
+- type: DietSwap
+  newStomachPrototype: OrganHerbivoreStomach
+
+type : Diet
+id: CarnivoreStomach
+name: "Carnivore Stomach"
+popupText: "You feel like you could eat MEAT."
+components:
+- type: DietSwap
+  newStomachPrototype: OrganCarnivoreStomach
