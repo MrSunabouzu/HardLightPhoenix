@@ -1,11 +1,14 @@
-using Content.Server._Phoenix.Diet.Components;
+using Content.Shared._Phoenix.Traits.Diets;
 using Content.Server.Body.Components;
 using Content.Server.Body.Systems;
 using Content.Shared.Body.Systems;
+using Content.Shared.Body.Components;
 using Content.Shared.Chemistry.EntitySystems;
+
 using Robust.Shared.Containers;
 
-namespace Content.Server._Phoenix.Diet.Systems;
+namespace Content.Server._phoenix.Traits.Diets;
+
 //this is the _Funkystation stomach swap mutation with the serial numbers filed off. It's dirty but it should get the job done.
 public sealed class DietSwapSystem : EntitySystem
 {
@@ -15,8 +18,8 @@ public sealed class DietSwapSystem : EntitySystem
     public override void Initialize()
     {
         base.Initialize();
+
         SubscribeLocalEvent<DietSwapComponent, ComponentStartup>(OnStartup);
-        SubscribeLocalEvent<DietSwapComponent, ComponentShutdown>(OnShutdown);
     }
 
     private void OnStartup(Entity<DietSwapComponent> ent, ref ComponentStartup args)

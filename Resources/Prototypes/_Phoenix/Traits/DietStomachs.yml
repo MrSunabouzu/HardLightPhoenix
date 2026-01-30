@@ -1,5 +1,6 @@
 - type: entity
   id: OrganHerbivoreStomach
+  name: Herbivore Stomach
   parent: OrganAnimalStomach
   categories: [ HideSpawnMenu ]
   components:
@@ -24,6 +25,7 @@
 
 - type: entity
   id: OrganCarnivoreStomach
+  name: Carnivore Stomach
   parent: OrganAnimalStomach
   categories: [ HideSpawnMenu]
   Components:
