@@ -3,6 +3,12 @@
 #  name: trait-category-disabilities
 #  maxTraitPoints: 10
 
+#Phoenix Addition
+- type: traitCategory
+  id: Diets
+  name: trait-category-diets
+  maxTraitPoints: 1
+
 - type: traitCategory
   id: SpeechTraits
   name: trait-category-speech

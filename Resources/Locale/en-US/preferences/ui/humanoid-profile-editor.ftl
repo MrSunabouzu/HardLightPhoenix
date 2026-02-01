@@ -80,3 +80,4 @@ trait-category-speech = Accents
 trait-category-quirks = Quirks
 # Mono
 trait-category-physical = Physical
+trait-category-diets = Diets

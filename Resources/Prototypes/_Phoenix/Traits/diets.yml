@@ -1,0 +1,59 @@
+- type : trait
+  id: HumanStomach
+  name: trait-human-stomach-name
+  desc: trait-human-stomach-desc
+  category: Diets
+  cost: 1
+  components:
+  - type: DietSwap
+    newStomachPrototype: OrganHumanStomach
+
+- type : trait
+  id: ReptilianStomach
+  name: trait-Reptilian-stomach-name
+  desc: trait-Reptilian-stomach-desc
+  category: Diets
+  cost: 1
+  components:
+  - type: DietSwap
+    newStomachPrototype: OrganReptilianStomach
+
+- type : trait
+  id: MothStomach
+  name: trait-moth-stomach-name
+  desc: trait-moth-stomach-desc
+  category: Diets
+  cost: 1
+  components:
+  - type: DietSwap
+    newStomachPrototype: OrganMothStomach
+
+- type : trait
+  id: VulpkaninStomach
+  name: trait-canine-stomach-name
+  desc: trait-canine-stomach-desc
+  category: Diets
+  cost: 1
+  components:
+  - type: DietSwap
+    newStomachPrototype: OrganVulpkaninStomach
+
+- type : trait
+  id: HerbivoreStomach
+  name: trait-Herbivore-stomach-name
+  desc: trait-Herbivore-stomach-desc
+  category: Diets
+  cost: 1
+  components:
+  - type: DietSwap
+    newStomachPrototype: OrganHerbivoreStomach
+
+- type : trait
+  id: CarnivoreStomach
+  name: trait-carnivore-stomach-name
+  desc: trait-carnivore-stomach-desc
+  category: Diets
+  cost: 1
+  components:
+  - type: DietSwap
+    newStomachPrototype: OrganCarnivoreStomach
